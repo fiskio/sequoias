@@ -1,0 +1,16 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+# this still allows pull requests to be built, but without creating an
+# extra redundant 'push' build for every pull request.
+branches:
+  only:
+    - master
+
+before_install:
+  - ./dockers/build CPU
+
+script:
+  - ./dockers/run flake8 && ./dockers/run nosetests -a slow

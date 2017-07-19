@@ -1,0 +1,12 @@
+#!/bin/bash -x
+
+DOCKER=docker
+
+if [[ -e /usr/bin/nvidia-docker ]]; then
+    echo 'Running on GPU!'
+    DOCKER=nvidia-docker
+fi
+
+$DOCKER run --rm -it -v `pwd`:/sequoias -w /sequoias \
+	sequoias \
+	bash -c "source /cntk/activate-cntk > /dev/null && $*"
