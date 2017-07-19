@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/TouchType/CiNeTeKa.svg?token=Kvb7CTuEDkyy7jzfc8sA&branch=master)](https://travis-ci.org/fiskio/sequoias)
+[![Build Status](https://travis-ci.org/fiskio/sequoias.svg?branch=master)](https://travis-ci.org/fiskio/sequoias)
 
 # Sequoias
 A Sequence-2-Sequence framework in CNTK
