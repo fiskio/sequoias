@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+docker build --rm -t sequoias -f dockers/Dockerfile-$1 .
