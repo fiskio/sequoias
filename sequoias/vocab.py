@@ -73,8 +73,8 @@ class Vocab:
         return cls(init_terms=[])
 
     @classmethod
-    def from_unigram_file(cls, unig_file,
-                          max_len=None, oov=None, bos=None, eos=None, name=None):
+    def from_unigram_file(cls, unig_file, max_len=None,
+                          oov=None, bos=None, eos=None, name=None):
         """Factory to initialise Vocab from unigram file"""
         with open(unig_file) as vf:
             init_words = [line.split()[0] for line in it.islice(vf, max_len)]
