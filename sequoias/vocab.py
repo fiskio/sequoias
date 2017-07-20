@@ -1,3 +1,6 @@
+import itertools as it
+
+
 class Vocab:
     """A mapping between TERMs and IDs
 

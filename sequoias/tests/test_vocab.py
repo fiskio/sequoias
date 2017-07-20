@@ -1,7 +1,6 @@
 from parameterized import parameterized
-from nose.plugins.attrib import attr
 
-from ..vocab import Vocab, VocabCache
+from ..vocab import Vocab
 
 from copy import deepcopy
 
